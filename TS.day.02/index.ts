@@ -35,6 +35,7 @@ names.push(10)
 
 // tupla
 
-const pessoa: [string,number,boolean] = ['vivi' , 20 , false];
+const pessoa: [string,number,boolean|number] = ['vivi' , 20 , 10];
 // tem que ser na ordem e n pode ter nada a mais nem a menos
+
 
