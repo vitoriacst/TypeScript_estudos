@@ -7,4 +7,5 @@ const pardal: Ave = {
   ovipara:true,
 }
 
+
 console.table(pardal)
