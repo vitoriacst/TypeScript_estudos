@@ -32,3 +32,9 @@ anoNascimento = 2003
 const names: (string|number)[] = ['teste']
 names.push('Vivi')
 names.push(10)
+
+// tupla
+
+const pessoa: [string,number,boolean] = ['vivi' , 20 , false];
+// tem que ser na ordem e n pode ter nada a mais nem a menos
+
