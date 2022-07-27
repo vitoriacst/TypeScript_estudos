@@ -21,3 +21,8 @@ function preGreeting(f:(name:string) => string,userName:string){
 preGreeting(greeting,'vivi')
 
 // função que recebe a outra como parâmetro , sendo ambas tipadas
+
+
+ // generic functions
+
+ 
