@@ -26,7 +26,10 @@
     "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
+    "@types/restify-errors": "^4.3.4",
     "express": "^4.18.1",
-    "http-status-codes": "^2.2.0"
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.2.0",
+    "restify-errors": "^8.0.2"
   }
 }

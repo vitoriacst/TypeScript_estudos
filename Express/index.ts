@@ -1,7 +1,11 @@
 // ./index.ts
+// ./index.ts
+
 import express, { NextFunction, Request, Response } from 'express';
+import 'express-async-errors';
 import { StatusCodes } from 'http-status-codes';
 
+// ..
 const app = express();
 
 app.use(express.json());
