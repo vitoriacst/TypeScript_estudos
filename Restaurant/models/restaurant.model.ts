@@ -1,7 +1,6 @@
 import connection from "./connection";
 
 import Restaurant from "../interfaces/restaurant.interface";
-import { RowDataPacket } from "mysql2";
 
 class RestaurantModel {
   public RestaurantModel() {}
@@ -15,4 +14,6 @@ class RestaurantModel {
   }
 };
 
-const restaurantModel = new RestaurantModel(); 
+const restaurantModel = new RestaurantModel();
+
+export default restaurantModel
