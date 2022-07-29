@@ -1,9 +1,16 @@
-import restaurantModel from "../models/restaurant.model";
+import connection from "../../Express/models/connection";
 import Restaurant from "../interfaces/restaurant.interface";
+import RestaurantModel from "../models/restaurant.model";
 
-class RestaurantService {
-  restaurantModel: restaurantModel
-  RestaurantService () {
-    this.restaurantModel = new restaurantModel()
+class RestaurantService{
+  public restaurantModel :RestaurantModel;
+  constructor(model: RestaurantModel = new RestaurantModel(connection)){
+    this.restaurantModel = model;
+  }
+  getAll = async (): Promise<Restaurant[]> => {
+    return this.restaurantModel.getAll();
   }
 }
+
+
+export default RestaurantService;

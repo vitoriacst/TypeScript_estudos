@@ -1,5 +1,5 @@
+import dotenv from 'dotenv'
 import mysql from 'mysql2/promise';
-import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -11,4 +11,4 @@ const connection = mysql.createPool({
   port: Number(process.env.DB_PORT),
 });
 
-export default connection; 
+export default connection;
