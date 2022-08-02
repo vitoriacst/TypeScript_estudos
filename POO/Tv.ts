@@ -18,4 +18,12 @@ class Tv{
     this.resolution = r;
     this.connection = c;
   }
+  turnOn(){
+    console.log(`${this.brand} is on`);
+
+  }
 }
+
+const t1 = new Tv('LG',23, 'hd')
+
+t1.turnOn()
