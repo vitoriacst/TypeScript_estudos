@@ -46,6 +46,12 @@ class students{
       return nextNote;
     },0)
   }
+
+    media():number{
+      const sum = this.somaNotas()
+      const divisor = (sum/4)
+    }
+
   //O valor de retorno da sua função reducer é atribuída ao acumulador. O acumulador, com seu valor atualizado, é repassado para cada iteração subsequente pelo array, que por fim, se tornará o valor resultante, único, final.
   // criando esse metodo para a soma das notas
 
