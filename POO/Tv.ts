@@ -13,6 +13,9 @@ class Tv{
   connection: string;
   connectedTO: string;
   constructor(b: string, r: number , c: string,){
-
+    console.log(`Tv ${b}`);
+    this.brand = b;
+    this.resolution = r;
+    this.connection = c;
   }
 }
