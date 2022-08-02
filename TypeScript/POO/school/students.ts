@@ -31,4 +31,13 @@ class students{
   set exams(values:number[]){
     this._exams = values
   }
+
+  get examNotes() :number[]{
+    return this._examNotes
+  }
+  set examNotes(values:number[]){
+    if(values.length > 4){
+      throw new Error('A pessoa deve ter 4 notas')
+    }
+  }
 }
