@@ -10,11 +10,17 @@ class Book{
     this._salePrice = salePrice;
     this._cost = cost;
   }
-  // getters
+  // getters serve para ler
   get id(): number {
     return this._id;
   }
+  // set serve para acessar
+  set id(value:number){
+    this._id = value
+  }
+
 }
+
 
 const book = new Book(1,'Senhor dos aneis' , 90, 1)
 
