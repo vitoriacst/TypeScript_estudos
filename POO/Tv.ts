@@ -6,3 +6,13 @@
 // connectedTo: conexão atual Este atributo não precisa ser inicializado no construtor.
 // Dentro da classe Tv, crie o método turnOn, que imprimirá os atributos inicializados no construtor.
 // Instancie um objeto a partir da classe Tv, chame o método turnOn para imprimir seus atributos.
+
+class Tv{
+  brand: string;
+  resolution: number;
+  connection: string;
+  connectedTO: string;
+  constructor(b: string, r: number , c: string,){
+
+  }
+}
