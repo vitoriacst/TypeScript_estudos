@@ -1,3 +1,4 @@
+// classe -> define as características
 class Person{
   name: string;
   height: number;
