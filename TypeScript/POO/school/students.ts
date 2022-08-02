@@ -9,7 +9,7 @@ class students{
     this._name=name;
     this._enrollment=enrollment
   }
- 
+
   set enrollment(value: string) {
     this._enrollment = value;
   }
@@ -40,4 +40,13 @@ class students{
       throw new Error('A pessoa deve ter 4 notas')
     }
   }
+  somaNotas():number{
+    return [...this.examNotes,...this._examNotes].reduce((previousNote , note)=>{
+      const nextNote = note + previousNote;
+      return nextNote;
+    },0)
+  }
+  //O valor de retorno da sua função reducer é atribuída ao acumulador. O acumulador, com seu valor atualizado, é repassado para cada iteração subsequente pelo array, que por fim, se tornará o valor resultante, único, final.
+  // criando esse metodo para a soma das notas
+
 }
