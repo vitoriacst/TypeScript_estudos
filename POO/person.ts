@@ -11,6 +11,7 @@ constructor(n: string, h: number, w: number) {
   this.height = h;
   this.weight = w;
 }
+// this se refere aos objetos
 
 // metodo
   sleep(){
@@ -19,6 +20,7 @@ constructor(n: string, h: number, w: number) {
 }
 
 const p1 = new Person('maria',171,58)
+// criando um novo objeto (passando o nome da classe)
 const p2 = new Person('vivi', 150 , 54)
 
 p1.sleep()
