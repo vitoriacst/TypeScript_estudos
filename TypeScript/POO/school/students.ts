@@ -9,7 +9,7 @@ class students{
     this._name=name;
     this._enrollment=enrollment
   }
-  // agora vamos entender
+ 
   set enrollment(value: string) {
     this._enrollment = value;
   }
