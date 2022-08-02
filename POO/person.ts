@@ -12,7 +12,14 @@ constructor(n: string, h: number, w: number) {
 }
 
 // metodo
-sleep(){
-  console.log(`${this.name}:zzzzz`);
+  sleep(){
+    console.log(`${this.name}:zzzzz`);
+  }
 }
-}
+
+const p1 = new Person('maria',171,58)
+const p2 = new Person('vivi', 150 , 54)
+
+p1.sleep()
+p2.sleep()
+
