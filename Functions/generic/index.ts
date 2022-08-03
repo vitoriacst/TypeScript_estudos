@@ -13,3 +13,4 @@ function mergeObjects<U, T>(obj1:U,obj2:T){
 // dando para eles um tipo generic
 
 const newObject =  mergeObjects({name:"vivi"},{age:19})
+
