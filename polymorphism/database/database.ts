@@ -1,4 +1,4 @@
-class Database{
+abstract class Database{
 
 }
 
