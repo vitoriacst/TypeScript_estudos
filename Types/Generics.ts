@@ -74,3 +74,24 @@ const userName: string = 'vivi'
 const userName2: typeof userName = 'vi'
 
 // criamos uma relacao com o tipo de uma var anterior
+
+// indexed access types
+// podemos criar um tipo baseado em uma chave de objeto -|> podendo reaproveitar o tipo da chave em outros locais
+
+type Truck = {km: number, kg: number , description:string}
+
+type km = Truck['km']
+// aqui estou pegando uma chave especifica do objeto Truck
+
+const newTruck : Truck = {
+  km: 100000,
+  kg: 5000,
+  description: 'aguenta pouca carga'
+}
+
+function showKm(km:km){
+  console.log(`o veiculo tem a km de = ${km} `);
+
+}
+
+showKm(newTruck.km)
