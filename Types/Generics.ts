@@ -95,3 +95,13 @@ function showKm(km:km){
 }
 
 showKm(newTruck.km)
+
+// conditional expressions types
+// permite criar um if ternario
+
+interface A {}
+
+interface B  extends A{}
+
+type myType = B extends A ? number : string
+// realizando o condicional
