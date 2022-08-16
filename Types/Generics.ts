@@ -2,3 +2,19 @@
  function showData<T>(arg: T) : string{
   return `o dado sera: ${arg}`
  }
+
+ console.log(showData(6));
+ console.log(showData('TESTE'));
+
+
+ // constraint in generic
+
+ function showProductName<T extends {name: string}>(obj: T){
+  return `o nome do produto e ${obj.name}`
+ }
+
+ const car = {name: 'teste'}
+
+ console.log(showProductName(car));
+
+
