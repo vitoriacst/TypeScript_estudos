@@ -65,3 +65,12 @@ const myChar: character = {
 }
 
 console.log(showCharName(myChar,'name'));
+
+// typeOf type Operator
+// podemos criar um novo tipo e esse tipo sera baseado no tipo de algum dado
+
+const userName: string = 'vivi'
+
+const userName2: typeof userName = 'vi'
+
+// criamos uma relacao com o tipo de uma var anterior
