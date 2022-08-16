@@ -9,6 +9,8 @@ const userMock: User = {
   email: 'teste@gmail.com'
 }
 
+
+
 // I will implement an interface for userMock
 
 describe('Users', ()=>{
@@ -31,6 +33,12 @@ describe('Users', ()=>{
       const response = await chai.request(app)
       .get('/users')
       expect(response.body).to.members.depp.equal([])
+    })
+    describe('Create', ()=>{
+      it('should return status 201', ()=>{
+        const response = await chai.request(app)
+        .post('/users')
+      })
     })
   })
 })
