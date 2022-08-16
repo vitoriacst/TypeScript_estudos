@@ -42,6 +42,9 @@
  }
 
  console.log(getSomeKey(server, 'ram'));
- // aqui ele vai gerar o error 
+ // aqui ele vai gerar o error
  console.log(getSomeKey(server, 'teste'));
 
+
+ // keyof type Operator
+// podemos criar um novo tipo, sendo baseado nas chaves do objeto
