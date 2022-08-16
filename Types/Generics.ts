@@ -1,3 +1,4 @@
+
 // utilizamos o generic quando uma func pode aceitar mais de um tipo
  function showData<T>(arg: T) : string{
   return `o dado sera: ${arg}`
@@ -48,3 +49,19 @@
 
  // keyof type Operator
 // podemos criar um novo tipo, sendo baseado nas chaves do objeto
+
+type character = {name: string , age: number , hasDriveLicense: Boolean}
+
+type C = keyof character
+
+// o C ja faz a conexao com o name do character
+function showCharName(obj: character , name: C): string{
+  return `${obj[name]}`
+}
+const myChar: character = {
+  name: 'vivi',
+  age: 19,
+  hasDriveLicense: false
+}
+
+console.log(showCharName(myChar,'name'));
