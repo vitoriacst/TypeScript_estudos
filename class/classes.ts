@@ -43,6 +43,7 @@ class Machine {
   name
   constructor(name:string){
     this.name = name
+    // this gera a ref
   }
 }
 
@@ -77,3 +78,18 @@ console.log(jimmy.name);
 jimmy.greeting()
 // acessando o method
 
+
+// -|> uso do this
+class TruckTwo {
+  model
+  hp
+  constructor(model:string , hp: number)
+  {
+    this.hp = hp
+    this.model = model
+  }
+  showDetails(){
+    console.log(`caminhao do modelo ${this.model} que tem ${this.hp} cavalos de potencia`);
+
+  }
+}
