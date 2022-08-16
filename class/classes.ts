@@ -55,3 +55,25 @@ class KillerMachine extends Machine {
     this.guns = guns
   }
 }
+
+// methods
+// implementacao de funcoes dentros das classes
+// propriedades sao como variaveis e metodos como funcoes
+
+class Dwarf {
+  name
+  constructor(name: string){
+    this.name = name;
+  }
+  greeting(){
+    console.log("hey stranger");
+  }
+}
+
+const jimmy = new Dwarf("Jimmy")
+
+console.log(jimmy.name);
+
+jimmy.greeting()
+// acessando o method
+
