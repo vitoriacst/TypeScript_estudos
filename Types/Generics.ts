@@ -18,3 +18,14 @@
  console.log(showProductName(car));
 
 
+ // interfaces in generic
+
+ interface MyObject <T , U>{
+  name: string,
+  wheels: T,
+  engine: U,
+ }
+
+ type Carro = MyObject<number , number>
+
+ // definindo tipos genericos para os atributos da interface
