@@ -105,3 +105,12 @@ interface B  extends A{}
 
 type myType = B extends A ? number : string
 // realizando o condicional
+
+
+// template literals type
+// criando tipos utilizando template literals
+
+type TestA = 'text'
+
+type CustomType = `some ${TestA}`
+
