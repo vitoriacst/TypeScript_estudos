@@ -2,12 +2,18 @@ import chai, { expect } from 'chai';
 import chaiHttp from 'chai-http'
 
 const userMock: User = {
-  
+  id:1,
+  name: 'teste',
+  createdAt: new Date()
+  updatedAt: new Date()
+  email: 'teste@gmail.com'
 }
+
+// I will implement an interface for userMock
 
 describe('Users', ()=>{
   describe('List', ()=>{
-    beforeEach(()=>{  sinon.stup(User, 'findAll').resolves([])
+    beforeEach(()=>{  sinon.stup(User, 'findAll').resolves([userMock as User])
     })
 
     afterEach(()=>{
