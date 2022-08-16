@@ -29,8 +29,29 @@ const vivi = new NewUser('vivi' , 19)
 class CarTest {
   name
   readonly wheels = 4
-  // -|> adicionando o readOnly no atributo wheels 
+  // -|> adicionando o readOnly no atributo wheels
   constructor(name: string){
     this.name = name
+  }
+}
+
+// -|> Heranca e super
+// para gerar a heranca usamos a palavra reservada extends
+// todos as propriedades passadas de pai pra filhos sao passadas pelo super
+
+class Machine {
+  name
+  constructor(name:string){
+    this.name = name
+  }
+}
+
+const trator = new Machine('trator')
+
+class KillerMachine extends Machine {
+  guns
+  constructor(name:string,guns: string){
+    super(name)
+    this.guns = guns
   }
 }
