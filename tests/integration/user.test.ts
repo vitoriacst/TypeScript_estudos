@@ -1,6 +1,10 @@
 import chai, { expect } from 'chai';
 import chaiHttp from 'chai-http'
 
+const userMock: User = {
+  
+}
+
 describe('Users', ()=>{
   describe('List', ()=>{
     beforeEach(()=>{  sinon.stup(User, 'findAll').resolves([])
@@ -9,7 +13,7 @@ describe('Users', ()=>{
     afterEach(()=>{
       sinon.restore()
     })
-    
+
     it('Should return status 200', async()=> {
 
      const response = await chai.request(app)
