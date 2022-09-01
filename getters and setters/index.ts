@@ -36,3 +36,7 @@ const person = new UserData('vivi', 'holanda')
  const myCoords = new Coords()
   myCoords.fillX = 16;
   myCoords.filly = 12
+
+  // override de metodos
+
+  
