@@ -93,3 +93,25 @@ class TruckTwo {
 
   }
 }
+
+// visibilidade das classes
+// public -> visibilidade default para qualquer um
+// protect -> tem a sua visibilidade liberada apenas para as suas herdeiras, para acessar precisamos de um metodo
+// private -> apenas a classe que declarou pode usar o metodo
+
+
+class D {
+  x = 10
+}
+
+class E extends D {
+
+}
+
+const DIntance = new D ()
+console.log(DIntance.x);
+
+const EIntance = new E ()
+console.log(EIntance.x);
+
+
