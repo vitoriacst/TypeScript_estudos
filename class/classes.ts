@@ -199,3 +199,17 @@ class ParameterProprierties{
     this._qty = _qty
 }
 }
+
+// class expressions
+// criando uma classe anonima = encapsulando uma classe em uma variavel
+
+const myClass = class<T>{
+  name
+  constructor(name:T){
+    this.name = name
+  }
+}
+
+const person = new myClass("vivi")
+
+console.log(person);
