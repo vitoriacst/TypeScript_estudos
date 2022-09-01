@@ -188,3 +188,14 @@ class Item<T, U>{
 }
 // tipamos como strings
 const newItem = new Item("caixa" , 2)
+
+
+// Parameters properties
+// -> recurso para definir  a privacidade , nom e tipo das propriedades do constructor , resumindo a sintaxe
+
+class ParameterProprierties{
+  constructor(public name: string ,private _qty: number){
+    this.name = name,
+    this._qty = _qty
+}
+}
