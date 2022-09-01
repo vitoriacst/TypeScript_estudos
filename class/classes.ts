@@ -174,3 +174,17 @@ console.log(StaticMembers.prop);
 console.log(StaticMembers.staticMethod());
 
 
+// generic class
+// os tipos podem ser definidos na hora da instancia
+
+class Item<T, U>{
+  first
+  second
+
+  constructor(first: T, second: U){
+    this.first = first
+    this.second = second
+  }
+}
+// tipamos como strings
+const newItem = new Item("caixa" , 2)
