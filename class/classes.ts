@@ -135,3 +135,25 @@ console.log(DIntance.x);
 
 const GIntance = new G ()
 console.log(GIntance.ShowX());
+
+
+// private
+
+class PrivateClass {
+  private name = "private"
+  showName(){
+    this.name
+  }
+  private privateMethod(){
+    console.log('teste');
+
+  }
+  showPrivateMethod(){
+    this.privateMethod()
+  }
+}
+
+const pObj = new PrivateClass()
+
+console.log(pObj.showName());
+console.log(pObj.showPrivateMethod());
