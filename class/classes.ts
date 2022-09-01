@@ -115,3 +115,23 @@ const EIntance = new E ()
 console.log(EIntance.x);
 
 
+
+// protect
+
+class F {
+  protected x = 10
+}
+
+class G extends F{
+  ShowX(){
+    console.log("teste"+this.x);
+
+  }
+
+}
+
+const FIntance = new F ()
+console.log(DIntance.x);
+
+const GIntance = new G ()
+console.log(GIntance.ShowX());
