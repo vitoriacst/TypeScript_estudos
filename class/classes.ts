@@ -203,7 +203,7 @@ class ParameterProprierties{
 // class expressions
 // criando uma classe anonima = encapsulando uma classe em uma variavel
 
-const myClass = class<T>{
+const myClass = class <T>{
   name
   constructor(name:T){
     this.name = name
@@ -213,3 +213,24 @@ const myClass = class<T>{
 const person = new myClass("vivi")
 
 console.log(person);
+
+
+// abstract class
+// serve como molde para as outras classes
+// todos os seus metodos devem ser implementadas nas suas herdeiras
+
+abstract class abstractClass{
+  abstract showName(): void
+}
+
+class abstractChild extends abstractClass {
+  name: string
+  constructor(name:string){
+    super()
+    this.name = name
+  }
+  showName() {
+      console.log(this.name);
+
+  }
+}
