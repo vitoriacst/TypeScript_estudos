@@ -39,4 +39,21 @@ const person = new UserData('vivi', 'holanda')
 
   // override de metodos
 
-  
+// utilizado para substituir um metodo de uma classe que herdamos algo
+// basta criar o metodo ocm o mesmo nome da classe filha
+
+
+class Base {
+  someMethod(){
+    console.log('teste');
+
+  }
+}
+
+class novaBase extends Base {
+   someMethod(): void {
+       console.log('testando outra coisa');
+
+   }
+   // esse substitui o de cima 
+}
