@@ -1,6 +1,5 @@
 // importação de arquivos 
 
-import importGreet from "./import.js";
+import {X} from from "./import";
 
-
-importGreet()
+console.log(x);
