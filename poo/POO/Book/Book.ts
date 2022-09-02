@@ -18,6 +18,7 @@ class Book{
   set id(value:number){
     this._id = value
   }
+  
  set salePrice(value: number){
   if(value <  this._cost) throw new Error('valor de venda n pode ser menor do que o custo ')
   this._salePrice = value
