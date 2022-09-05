@@ -1,13 +1,13 @@
 "use strict";
 // ./exercises.ts
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
 function greeter(name) {
-    return "Ol\u00E1 ".concat(name, "!");
+    return `Olá ${name}!`;
 }
 exports.greeter = greeter;
 function personAge(name, age) {
-    return "".concat(name, " tem ").concat(age, " anos!");
+    return `${name} tem ${age} anos!`;
 }
 exports.personAge = personAge;
 function add(x, y) {
@@ -23,6 +23,6 @@ function triangle(base, height) {
 }
 exports.triangle = triangle;
 function square(side) {
-    return Math.pow(side, 2);
+    return side ** 2;
 }
 exports.square = square;

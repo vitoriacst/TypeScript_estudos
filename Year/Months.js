@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Months;
 (function (Months) {
     Months["JANEIRO"] = "Janeiro";
@@ -15,5 +15,5 @@ var Months;
     Months["NOVEMBRO"] = "Novembro";
     Months["DEZEMBRO"] = "Dezembro";
 })(Months || (Months = {}));
-exports["default"] = Months;
+exports.default = Months;
 // criando um enum com os meses do ano

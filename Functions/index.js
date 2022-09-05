@@ -1,3 +1,4 @@
+"use strict";
 // void
 function withoutReturn() {
     console.log('essa função não possui retorno');
@@ -5,11 +6,11 @@ function withoutReturn() {
 // classificando como o tipo void
 // passando uma callback como argumento
 function greeting(name) {
-    return "Hello ".concat(name);
+    return `Hello ${name}`;
 }
 function preGreeting(f, userName) {
     console.log("preparando a função");
-    var greet = f(userName);
+    const greet = f(userName);
     console.log(greet);
 }
 preGreeting(greeting, 'vivi');

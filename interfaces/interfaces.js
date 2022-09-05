@@ -1,9 +1,9 @@
 "use strict";
-exports.__esModule = true;
-var pardal = {
+Object.defineProperty(exports, "__esModule", { value: true });
+const pardal = {
     penas: true,
     bico: true,
     dente: false,
-    ovipara: true
+    ovipara: true,
 };
 console.table(pardal);
